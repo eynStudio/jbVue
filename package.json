@@ -1,17 +1,20 @@
 {
   "name": "jb-vue",
   "version": "0.0.2",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "entry": {
     "index": "./src/index.tsx"
   },
   "scripts": {
     "start": "webpack-dev-server --hot --inline --no-info",
-    "dist": "webpack -p"
+    "dist": "webpack -p",
+    "build": "tsc"
   },
   "dependencies": {
     "axios": "^0.16.0",
     "es6-promise": "^4.1.0",
-    "jbreak": "^0.0.2",
+    "jbreak": "^0.0.5",
     "moment": "^2.18.1",
     "normalize.css": "^6.0.0",
     "uuid": "^3.0.1",
