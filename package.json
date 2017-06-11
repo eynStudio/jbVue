@@ -1,6 +1,6 @@
 {
   "name": "jb-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "entry": {
@@ -11,6 +11,10 @@
     "dist": "webpack -p",
     "build": "tsc"
   },
+  "files": [
+    "src",
+    "lib"
+  ],
   "dependencies": {
     "axios": "^0.16.0",
     "es6-promise": "^4.1.0",
