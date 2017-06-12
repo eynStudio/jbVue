@@ -4,21 +4,26 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "module": "commonjs",
+    "module": "es2015",
+    "moduleResolution": "node",
     "target": "es5",
     "sourceMap": true,
     "declaration": true,
-    "outDir": "lib",
+    "declarationDir": "./types",
+    "outDir": "./",
     "lib": [
       "dom",
-      "es6",
-      "es2015.promise"
+      "es2015",
+      "es2016",
+      "es2017"
     ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist"
   ],
   "typeRoots": [
     "node_modules/@types"
-  ]
+  ],
+  "compileOnSave": false
 }

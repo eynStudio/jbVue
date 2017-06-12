@@ -4,10 +4,17 @@ var path = require('path');
 module.exports = {
     entry: {
         index: './src/index.ts',
+        jbs: './src/bs/index.ts',
     },
     output: {
         path: path.resolve('dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        chunkFilename: "[name].min.js",
+        libraryTarget: 'umd',
+        library: 'jb-vue'
+    },
+    externals: {
+        vue: 'vue'
     },
     resolve: {
         extensions: ['.ts', '.js', '.htm'],
@@ -15,6 +22,7 @@ module.exports = {
             'vue$': 'vue/dist/vue.common.js'
         }
     },
+    devtool: 'source-map',
     module: {
         loaders: [
             {test: /\.tsx?$/, loader: "ts-loader"},
