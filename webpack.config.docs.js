@@ -3,8 +3,6 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        index: './src/index.ts',
-        jbs: './src/bs/index.ts',
         docs: './docs/index.ts',
     },
     output: {
@@ -13,9 +11,6 @@ module.exports = {
         chunkFilename: "[name].min.js",
         libraryTarget: 'umd',
         library: 'jb-vue'
-    },
-    externals: {
-        vue: 'vue'
     },
     resolve: {
         extensions: ['.ts', '.js', '.htm'],

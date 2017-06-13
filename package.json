@@ -8,7 +8,7 @@
     "jbs": "./src/bs/index.tsx"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --no-info",
+    "start": "webpack-dev-server --hot --inline --config webpack.config.docs.js",
     "dist": "webpack -p",
     "build": "tsc && tsc -m es6 --outDir dist/esm"
   },
