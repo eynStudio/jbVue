@@ -1,7 +1,7 @@
 import promise from 'es6-promise'
 promise.polyfill()
 import Vue from 'vue'
-import '../index.html'
+import '../../index.html'
 // import './common/common.scss'
 // import {router} from "./Router";
 import {Component, Model, Prop, Watch} from 'vue-property-decorator'

@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         index: './src/index.ts',
         jbs: './src/bs/index.ts',
-        docs: './docs/index.ts',
+        docs: './src/docs/index.ts',
     },
     output: {
         path: path.resolve('dist'),

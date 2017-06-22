@@ -1,6 +1,6 @@
 {
   "name": "jb-vue",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
   "entry": {
@@ -18,6 +18,7 @@
     "jbreak": "^0.0.5",
     "moment": "^2.18.1",
     "normalize.css": "^6.0.0",
+    "numeral": "^2.0.6",
     "uuid": "^3.0.1",
     "vue": "^2.2.6",
     "vue-property-decorator": "^4.0.0",
