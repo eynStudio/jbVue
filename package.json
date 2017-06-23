@@ -1,6 +1,6 @@
 {
   "name": "jb-vue",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "dist/index.js",
   "typings": "dist/types/index.d.ts",
   "entry": {
